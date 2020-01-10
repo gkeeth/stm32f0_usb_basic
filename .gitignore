@@ -1,0 +1,35 @@
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+# Format documentation: http://kicad-pcb.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-cache.lib
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
+*.ods#
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+# caches (regenerated on load)
+fp-info-cache
+
+# reference PDFs from ST
+an40808_getting_started_with_stm32f0x1_x2_x8_hardware_development.pdf
+stm32f031x4_stm32f031x6_datasheet.pdf
