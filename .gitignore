@@ -29,7 +29,3 @@ _autosave-*
 
 # caches (regenerated on load)
 fp-info-cache
-
-# reference PDFs from ST
-an40808_getting_started_with_stm32f0x1_x2_x8_hardware_development.pdf
-stm32f031x4_stm32f031x6_datasheet.pdf
