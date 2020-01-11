@@ -530,4 +530,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 2050 6850 1950
 Connection ~ 6850 1950
+Text Label 3950 3400 0    50   ~ 0
+clkin
 $EndSCHEMATC
