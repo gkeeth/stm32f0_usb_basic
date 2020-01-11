@@ -514,7 +514,7 @@ AR Path="/5E447A3E" Ref="NT?"  Part="1"
 AR Path="/5E34A630/5E447A3E" Ref="NT1"  Part="1" 
 F 0 "NT1" H 6500 2131 50  0000 C CNN
 F 1 "Net-Tie_2" H 6500 2040 50  0000 C CNN
-F 2 "NetTie:NetTie-2_THT_Pad1.0mm" H 6500 1950 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6500 1950 50  0001 C CNN
 F 3 "~" H 6500 1950 50  0001 C CNN
 	1    6500 1950
 	1    0    0    -1  
