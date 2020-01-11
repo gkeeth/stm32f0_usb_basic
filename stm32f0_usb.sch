@@ -797,22 +797,22 @@ $Comp
 L Power_Protection:USBLC6-2SC6 U3
 U 1 1 5E184338
 P 2050 1700
-F 0 "U3" V 2096 1156 50  0000 R CNN
-F 1 "USBLC6-2SC6" V 2005 1156 50  0000 R CNN
+F 0 "U3" V 1850 2050 50  0000 L CNN
+F 1 "USBLC6-2SC6" V 1750 2050 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1300 2100 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2250 2050 50  0001 C CNN
 	1    2050 1700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5E195B29
-P 2600 1900
-F 0 "#PWR08" H 2600 1650 50  0001 C CNN
-F 1 "GND" H 2605 1727 50  0000 C CNN
-F 2 "" H 2600 1900 50  0001 C CNN
-F 3 "" H 2600 1900 50  0001 C CNN
-	1    2600 1900
+P 1500 2000
+F 0 "#PWR08" H 1500 1750 50  0001 C CNN
+F 1 "GND" H 1505 1827 50  0000 C CNN
+F 2 "" H 1500 2000 50  0001 C CNN
+F 3 "" H 1500 2000 50  0001 C CNN
+	1    1500 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -826,8 +826,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 950  5450 950 
 Connection ~ 5600 950 
-Wire Wire Line
-	1200 950  1500 950 
 Wire Wire Line
 	1950 1150 1950 1200
 Wire Wire Line
@@ -843,13 +841,13 @@ Wire Wire Line
 Wire Wire Line
 	8200 2000 8200 4100
 Wire Wire Line
-	1400 1250 1400 2300
+	1300 1250 1300 2300
 Wire Wire Line
-	1400 2300 1950 2300
+	1300 2300 1950 2300
 Wire Wire Line
 	1950 2300 1950 2200
 Wire Wire Line
-	1200 1250 1400 1250
+	1200 1250 1300 1250
 Wire Wire Line
 	2150 2200 2150 2300
 Wire Wire Line
@@ -859,13 +857,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2100 8100 2100
 Wire Wire Line
-	2600 1900 2600 1700
-Wire Wire Line
-	2600 1700 2550 1700
-Wire Wire Line
 	1550 1700 1500 1700
-Wire Wire Line
-	1500 1700 1500 950 
 $Comp
 L Device:C C2
 U 1 1 5E28F095
@@ -922,9 +914,6 @@ F 3 "" H 3950 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 1450 3950 1350
-Wire Wire Line
-	1500 950  3950 950 
-Connection ~ 1500 950 
 Wire Wire Line
 	4650 950  4950 950 
 $Comp
@@ -1043,4 +1032,15 @@ Wire Wire Line
 	8500 5300 7500 5300
 Wire Wire Line
 	8500 5400 7500 5400
+Wire Wire Line
+	1200 950  2600 950 
+Wire Wire Line
+	1500 2000 1500 1700
+Wire Wire Line
+	2550 1700 2600 1700
+Wire Wire Line
+	2600 1700 2600 950 
+Connection ~ 2600 950 
+Wire Wire Line
+	2600 950  3950 950 
 $EndSCHEMATC
