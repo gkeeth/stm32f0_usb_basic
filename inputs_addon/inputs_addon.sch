@@ -93,7 +93,7 @@ U 1 1 5E517A01
 P 2650 2850
 F 0 "J1" H 2542 3635 50  0000 C CNN
 F 1 "Conn_01x14_Female" H 2542 3544 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Horizontal" H 2650 2850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 2650 2850 50  0001 C CNN
 F 3 "~" H 2650 2850 50  0001 C CNN
 	1    2650 2850
 	-1   0    0    -1  
@@ -197,7 +197,7 @@ U 1 1 5E530ECB
 P 9700 2850
 F 0 "J2" H 9672 2824 50  0000 R CNN
 F 1 "Conn_01x14_Male" H 9672 2733 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Horizontal" H 9700 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 9700 2850 50  0001 C CNN
 F 3 "~" H 9700 2850 50  0001 C CNN
 	1    9700 2850
 	-1   0    0    -1  
@@ -511,6 +511,50 @@ F 1 "CC-BY-SA_0.33in" H 1900 7686 60  0001 C CNN
 F 2 "Symbol_CreativeCommons:CC-BY-SA_SilkScreenTop_Small" H 1900 7550 50  0001 C CNN
 F 3 "" H 1900 7550 50  0001 C CNN
 	1    1900 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E1D47F3
+P 4050 6950
+F 0 "H1" H 4150 6999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4150 6908 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4050 6950 50  0001 C CNN
+F 3 "~" H 4050 6950 50  0001 C CNN
+	1    4050 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1D4C44
+P 4050 7050
+F 0 "#PWR?" H 4050 6800 50  0001 C CNN
+F 1 "GND" H 4055 6877 50  0000 C CNN
+F 2 "" H 4050 7050 50  0001 C CNN
+F 3 "" H 4050 7050 50  0001 C CNN
+	1    4050 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E1D5FD6
+P 5050 6950
+F 0 "H2" H 5150 6999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5150 6908 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5050 6950 50  0001 C CNN
+F 3 "~" H 5050 6950 50  0001 C CNN
+	1    5050 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1D5FDC
+P 5050 7050
+F 0 "#PWR?" H 5050 6800 50  0001 C CNN
+F 1 "GND" H 5055 6877 50  0000 C CNN
+F 2 "" H 5050 7050 50  0001 C CNN
+F 3 "" H 5050 7050 50  0001 C CNN
+	1    5050 7050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
