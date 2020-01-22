@@ -27,3 +27,8 @@ _autosave-*
 
 # caches (regenerated on load)
 fp-info-cache
+
+# c compiler/linker output
+*.elf
+generated.*.ld
+src/*/bin/*
