@@ -242,8 +242,8 @@ const struct usb_interface_descriptor data_iface[] = {{
     /* data class does not define class-specific descriptor information */
 }};
 
-/* TODO: libopencm3 docs say this should not need to be implemented in user code
- * however, this is the only way interfaces are specified, and it doesn't work
+/* libopencm3 docs say this should not need to be implemented in user code.
+ * However, this is the only way interfaces are specified, and it doesn't work
  * without this */
 const struct usb_interface ifaces[] = {{
     .num_altsetting = 1,
@@ -264,9 +264,6 @@ const struct usb_config_descriptor config = {
     .bmAttributes = 0x80,       /* bus powered */
     .bMaxPower = 0x32,          /* 100mA (50 * 2mA) */
 
-    /* TODO: libopencm3 docs say this shouldn't be necessary.
-     * However, interfaces are not otherwise specified, and the device doesn't
-     * work without it. */
     .interface = ifaces,
 };
 
@@ -344,17 +341,7 @@ static void cdcacm_data_rx_cb(usbd_device *usbd_dev, uint8_t ep) {
         gpio_toggle(PORT_LED, PIN_LED0);
 
         /* echo back to host
-         * TODO: modify to achieve desired demo behavior */
-        if (buf[0] == '\r') {
-            /* clobber buf[1]... Assume single character in buf */
-            /* TODO: handle multi-character buffers.
-             * Any number of characters in buffer could be \r...
-             * TODO: handle backspace?
-             */
-            buf[1] = '\n';
-            ++len;
-        }
-
+         * (boring demo behavior) */
         usbd_ep_write_packet(usbd_dev, ENDPOINT_ADDR_DATA_INPUT, buf, len);
         buf[len] = 0;
     }
