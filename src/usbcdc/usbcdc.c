@@ -253,16 +253,11 @@ const struct usb_interface ifaces[] = {{
     .altsetting = data_iface,
 }};
 
+
 const struct usb_config_descriptor config = {
     .bLength = USB_DT_CONFIGURATION_SIZE,
     .bDescriptorType = USB_DT_CONFIGURATION,
-    /* wTotalLength: number of bytes returned
-     * size of descriptors for configurations, interfaces, and endpoints.
-     * Here we have 1 config, 2 interfaces, and 3 endpoints. */
-    /* TODO: does this get automatically calculated by the driver? */
-    .wTotalLength = 1 * USB_DT_CONFIGURATION_SIZE \
-                  + 2 * USB_DT_INTERFACE_SIZE \
-                  + 3 * USB_DT_ENDPOINT_SIZE,
+    .wTotalLength = 0; /* automatically calculated by driver */
     .bNumInterfaces = 2,
     .bConfigurationValue = 1,
     .iConfiguration = 0,        /* no configuration string provided */
@@ -416,7 +411,6 @@ int main(void) {
             usbd_control_buffer, sizeof(usbd_control_buffer));
 
     usbd_register_set_config_callback(usbd_dev, cdcacm_set_config);
-    /* TODO: delay? */
 
     gpio_clear(PORT_LED, PIN_LED0 | PIN_LED1);
 
