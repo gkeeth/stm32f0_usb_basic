@@ -3,8 +3,12 @@
  *
  * original authors:
  * Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+ * Copyright (C) 2010 Piotr Esden-Tempski <piotr@esden.net>
  * Copyright (C) 2011 Stephen Caudle <scaudle@doceme.com>
  * Copyright (C) 2012 Karl Palsson <karlp@tweak.net.au>
+ * Copyright (C) 2013 Chuck McManis <cmcmanis@mcmanis.com>
+ * Copyright (C) 2013 Onno Kortmann <onno@gmx.net>
+ * Copyright (C) 2013 Frantisek Burian <BuFran@seznam.cz> (merge)
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
